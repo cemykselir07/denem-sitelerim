@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gelişmiş Web Sitesi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <a href="#" class="logo">WebSitem</a>
+                <ul class="nav-links">
+                    <li><a href="#home">Ana Sayfa</a></li>
+                    <li><a href="#about">Hakkımızda</a></li>
+                    <li><a href="#services">Hizmetler</a></li>
+                    <li><a href="#gallery">Galeri</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">İletişim</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h1>Hoşgeldiniz!</h1>
+                <p>Web sitemize hoşgeldiniz. Burada harika şeyler bulacaksınız!</p>
+                <button id="cta-button">Hedefe Ulaşın</button>
+                <div id="popup" class="popup hidden">
+                    <p>Hedefe ulaştınız!</p>
+                    <button id="close-popup" class="popup-button">Kapat</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2>Hakkımızda</h2>
+                <p>Şirketimiz hakkında bilgi burada olacak.</p>
+                <div id="accordion" class="accordion">
+                    <button class="accordion-button">Daha Fazla Bilgi</button>
+                    <div class="accordion-content">
+                        <p>Detaylı bilgi burada yer alacak.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="section">
+            <div class="container">
+                <h2>Hizmetlerimiz</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>Hizmet 1</h3>
+                        <p>Açıklama burada.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Hizmet 2</h3>
+                        <p>Açıklama burada.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="section">
+            <div class="container">
+                <h2>Galeri</h2>
+                <div class="gallery-grid">
+                    <img src="images/facebook-icon.png" alt="Fotoğraf 1">
+                    <img src="images/instagram-icon.png" alt="Fotoğraf 2">
+                    <img src="images/twitter-icon.png" alt="Fotoğraf 3">
+                </div>
+            </div>
+        </section>
+
+        <section id="blog" class="section">
+            <div class="container">
+                <h2>Blog</h2>
+                <article class="blog-post">
+                    <h3>Yapay Zeka ve Geleceği: 2024'te Neler Bekleniyor?</h3>
+                    <p>Yapay zeka, son yılların en heyecan verici gelişmelerinden biri olarak karşımıza çıkıyor. 2024 yılında yapay zekanın hangi alanlarda devrim yaratacağına dair öngörüler ve mevcut teknolojilerin gelecekteki potansiyeli hakkında bilgi edinmek ister misiniz? Bu yazıda, yapay zekanın sağlık, finans ve eğitim sektörlerinde nasıl bir dönüşüm yaratacağını ve yaşam kalitemizi nasıl iyileştireceğini keşfedeceksiniz. Ayrıca, yapay zeka etiği ve güvenliği üzerine güncel tartışmaları da ele alacağız.</p>
+                    <a href="#read-more1" class="read-more">Devamını Oku</a>
+                </article>
+                <article class="blog-post">
+                    <h3>Sağlıklı Yaşam İçin Günlük Alışkanlıklar</h3>
+                    <p>Sağlıklı bir yaşam sürmek için günlük alışkanlıklarınızı gözden geçirmek ister misiniz? Bu yazıda, sağlıklı beslenme, düzenli egzersiz ve mental sağlığınızı korumanın yollarını detaylandırıyoruz. Ayrıca, su tüketiminin öneminden uyku düzenine kadar birçok konuda pratik öneriler sunuyoruz. Kendinizi daha enerjik ve sağlıklı hissetmek için günlük hayatınıza dahil edebileceğiniz basit ama etkili alışkanlıkları öğrenin.</p>
+                    <a href="#read-more2" class="read-more">Devamını Oku</a>
+                </article>
+                <article class="blog-post">
+                    <h3>Verimliliğinizi Artırmak İçin 10 İpucu</h3>
+                    <p>Verimlilik, hem kişisel hem de profesyonel yaşamda başarılı olmanın anahtarıdır. Bu yazıda, iş hayatında ve günlük yaşamda verimliliğinizi artırmanıza yardımcı olacak 10 etkili ipucu sunuyoruz. Zaman yönetimi, önceliklendirme ve odaklanma teknikleri gibi konuları ele alarak, verimli çalışmanın ve hedeflerinize ulaşmanın yollarını keşfedeceksiniz. Bu stratejilerle işlerinizi daha hızlı ve etkili bir şekilde tamamlayabilirsiniz.</p>
+                    <a href="#read-more3" class="read-more">Devamını Oku</a>
+                </article>
+            </div>
+        </section>
+        
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>İletişim</h2>
+                <form id="contactForm" class="contact-form">
+                    <label for="name">Adınız:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">E-posta:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Mesajınız:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit" class="submit-button">Gönder</button>
+                </form>
+                <div id="contact-map" class="contact-map">
+                    <h3>Ofisimiz</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.420211529315!2d-122.07285168468024!3d37.40558357982345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb65e4fbc5f51%3A0x7b545cd292548b58!2sGoogleplex!5e0!3m2!1sen!2sus!4v1627547084592!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+        <section id="blog" class="section">
+            <div class="container">
+                <h2>Blog</h2>
+                <article class="blog-post">
+                    <h3>Teknolojide Yeni Trendler 2024</h3>
+                    <p>2024 yılı teknolojinin sınırlarını zorlayan yeniliklerle dolu. Yapay zeka, 5G teknolojisi ve kuantum hesaplama gibi konular öne çıkıyor. Bu yazıda, bu trendlerin nasıl geliştiğini ve gelecek yıllarda bizi nelerin beklediğini keşfedeceksiniz. Ayrıca, bu teknolojilerin iş dünyası ve günlük yaşam üzerindeki etkilerini de inceleyeceğiz.</p>
+                    <a href="#read-more1" class="read-more">Devamını Oku</a>
+                </article>
+                <article class="blog-post">
+                    <h3>Sağlıklı Yaşamın 5 Temel Kuralı</h3>
+                    <p>Sağlıklı yaşam, herkesin önceliği olmalıdır. Peki, sağlıklı yaşamın temel kuralları nelerdir? Bu yazımızda, dengeli beslenme, düzenli egzersiz, yeterli uyku ve stres yönetiminin sağlık üzerindeki etkilerini ele alıyoruz. Ayrıca, sağlıklı alışkanlıklar kazanmanın yollarını da bulacaksınız.</p>
+                    <a href="#read-more2" class="read-more">Devamını Oku</a>
+                </article>
+                <article class="blog-post">
+                    <h3>İş Hayatında Verimliliği Artırmanın Yolları</h3>
+                    <p>Verimlilik, iş hayatında başarılı olmanın anahtarıdır. Bu yazıda, iş yerinde daha verimli çalışmanın stratejilerini paylaşıyoruz. Zaman yönetimi, öncelik belirleme ve etkili iletişim gibi konular üzerinde durarak, iş performansınızı nasıl artırabileceğinizi öğrenebilirsiniz. Ayrıca, iş yerindeki motivasyonunuzu nasıl yüksek tutacağınızı da keşfedeceksiniz.</p>
+                    <a href="#read-more3" class="read-more">Devamını Oku</a>
+                </article>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Gelişmiş Web Sitesi. Tüm Hakları Saklıdır.</p>
+            <ul class="footer-links">
+                <li><a href="#privacy">Gizlilik Politikası</a></li>
+                <li><a href="#terms">Kullanım Şartları</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
